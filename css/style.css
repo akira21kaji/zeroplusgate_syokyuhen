@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Serif JP", serif;
+}
+
+.section-wrap {
+  padding: 80px 0;
+}
+
+.section-inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.section-ttl {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item + .nav-item {
+  margin-left: 40px;
+}
+
+/* headerのスタイル */
+.header {
+  padding-top: 40px;
+  background-color: #e7d7d4;
+}
+
+.header-logo {
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-nav {
+  margin-top: 40px;
+}
+
+/* kv */
+.kv {
+  background-color: #e7d7d4;
+  padding: 60px 0;
+}
+
+.kv-img {
+  height: 480px;
+}
+
+.kv-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* conceptのスタイル */
+.concept-copy {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.concept-txt {
+  text-align: center;
+  width: 500px;
+  margin: 40px auto 0;
+}
+
+.concept {
+  color: #646464;
+}
+
+/* items */
+.items {
+  color: #646464;
+}
+
+.items-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.items-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.items-img {
+  max-width: 512px;
+  width: 48%;
+}
+
+.items-content {
+  max-width: 520px;
+  width: 48%;
+}
+
+.items-ttl {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.items-price {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.items-txt {
+  margin-top: 24px;
+}
+
+.items-btn {
+  font-family: "Noto Sans JP", sans-serif;
+  display: block;
+  border: 1px solid #ccc;
+  width: 160px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.items-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* shop */
+.shop {
+  background-color: #e7d7d4;
+}
+
+.shop-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.shop-img {
+  max-width: 512px;
+  width: 48%;
+}
+
+.shop-content {
+  max-width: 512px;
+  width: 48%;
+}
+
+/* table */
+.shop-table {
+  width: 100%;
+}
+
+.shop-raw {
+  border-bottom: 1px solid #000;
+}
+
+.shop-head,
+.shop-data {
+  padding: 16px 0;
+}
+
+/* footer */
+.footer {
+  padding-top: 60px;
+  color: #646464;
+}
+
+.footer-logo {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.footer-list {
+  margin-top: 40px;
+}
+
+.footer-cr {
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 60px;
+}
