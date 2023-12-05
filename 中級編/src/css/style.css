@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+
+/* section */
+.section-wrap {
+  padding: 80px 0;
+}
+
+.section-inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.section-inner-s {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.section-ttl {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #dbaf89;
+  position: relative;
+}
+
+.section-ttl.__concept::before {
+  content: "コンセプト";
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.section-ttl.__menu::before {
+  content: "メニュー";
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.section-ttl.__info::before {
+  content: "お知らせ";
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.section-ttl.__access::before {
+  content: "アクセス";
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* btn */
+.btn {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #dbaf89;
+  border-radius: 28px;
+  font-weight: bold;
+}
+
+/* icon */
+.icon-list {
+  display: flex;
+}
+
+.icon-item + .icon-item {
+  margin-left: 16px;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 90%;
+  position: absolute;
+  top: 40px;
+  left: 5%;
+  z-index: 100;
+}
+
+.header-logo {
+  width: 160px;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item + .header-nav-item {
+  margin-left: 40px;
+}
+
+/* kv */
+.kv {
+  width: 100%;
+  height: 768px;
+  position: relative;
+}
+
+.kv.__index {
+  height: 768px;
+  background-image: url(../img/kv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kv-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* concept */
+.concept-txt-main {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.concept-txt-sub {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.concept-img-box {
+  height: 350px;
+  margin-top: 80px;
+}
+
+.concept-img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.concept-detail-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.concept-detail-content {
+  width: 400px;
+}
+
+.concept-detail-ttl {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.concept-detail-txt {
+  margin-top: 40px;
+}
+
+.concept-detail-img-wrap {
+  display: flex;
+  width: 580px;
+}
+
+.concept-detail-img-box {
+  width: 280px;
+  height: 390px;
+}
+
+.concept-detail-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.concept-detail-img-box:nth-child(1) {
+  margin-top: 60px;
+}
+
+.concept-detail-img-box:nth-child(2) {
+  margin: 0 0 60px 20px;
+}
+
+/* menu */
+
+.menu {
+  background-color: #ffe7d0;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.menu-item {
+  width: 340px;
+}
+
+.menu-item:nth-of-type(n + 4) {
+  margin-top: 40px;
+}
+
+.menu-img-box {
+  height: 220px;
+}
+
+.menu-img {
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.menu-content {
+  margin-top: 16px;
+}
+
+.menu-txt {
+  font-style: 18px;
+  font-weight: bold;
+}
+
+.menu-price {
+  margin-top: 8px;
+}
+
+/* info */
+
+.info-list {
+  margin-top: 60px;
+}
+
+.info-item {
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.info-item + .info-item {
+  margin-top: 40px;
+}
+
+.info-tag {
+  font-size: 12px;
+  margin-left: 24px;
+  padding: 4px 8px;
+}
+
+.info-tag.__orange {
+  border: 1px solid #ff9f51;
+  color: #ff9f51;
+}
+
+.info-tag.__red {
+  border: 1px solid #ba0000;
+  color: #ba0000;
+}
+
+.info-txt {
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* access */
+
+.access {
+  background-color: #fee7d0;
+}
+
+.access-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.access-content-img-box {
+  max-width: 512px;
+  width: 100%;
+  height: 300px;
+}
+
+.access-content-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.access-content-txt-box {
+  margin-left: 60px;
+}
+
+.access-content-txt-logo-box {
+  width: 160px;
+}
+
+.access-txt:first-of-type {
+  margin-top: 16px;
+}
