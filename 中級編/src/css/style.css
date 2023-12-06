@@ -130,11 +130,34 @@ body {
   background-size: cover;
 }
 
-.kv-copy {
+.kv.__menu {
+  height: 500px;
+  background-image: url(../img/menu_kv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kv.__info {
+  height: 500px;
+  background-image: url(../img/info_kv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kv-copy,
+.kv-detail {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.kv-detail .section-ttl {
+  color: #fff;
+}
+
+.kv-detail .section-ttl::before {
+  color: #fff;
 }
 
 /* concept */
@@ -209,6 +232,10 @@ body {
   background-color: #ffe7d0;
 }
 
+.menu.__detail {
+  background-color: #fff;
+}
+
 .menu-wrap {
   display: flex;
   justify-content: space-between;
@@ -252,6 +279,10 @@ body {
   margin-top: 60px;
 }
 
+.info-list.__detail {
+  margin-top: 0;
+}
+
 .info-item {
   border-bottom: 1px solid #bcbcbc;
 }
@@ -279,6 +310,58 @@ body {
 .info-txt {
   margin-top: 16px;
   padding-bottom: 16px;
+}
+
+/* page-btn */
+
+.page-btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.page-btn-item {
+  border: 1px solid #707070;
+}
+
+.page-btn-item.__current {
+  border: none;
+  background-color: #fee7d0;
+}
+
+.page-btn-item + .page-btn-item {
+  margin-left: 8px;
+}
+
+.page-btn-link {
+  display: block;
+  padding: 8px 16px;
+}
+
+/* info-single */
+.info-single-head {
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.info-single .info-tag {
+  font-size: 16px;
+}
+
+.info-single .info-txt {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info-single-content p {
+  margin-top: 24px;
+}
+
+.info-single-content img {
+  margin-top: 40px;
+  object-fit: cover;
+  height: 560px;
+  width: 100%;
 }
 
 /* access */
@@ -315,4 +398,41 @@ body {
 
 .access-txt:first-of-type {
   margin-top: 16px;
+}
+
+/* footer */
+.footer {
+  background-color: #dbaf89;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.footer-logo-box {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-nav-item + .footer-nav-item {
+  margin-left: 40px;
+}
+
+.footer .icon-list {
+  justify-content: center;
+}
+
+.footer .icon {
+  margin-top: 40px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 8px;
 }
